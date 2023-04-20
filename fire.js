@@ -14,15 +14,15 @@ const firebaseConfig = {
   
   //registerfirebase
   function register(){
-    alert("hello 1");
+
     full_name = document.getElementById('nm').value
     email = document.getElementById('em').value
     password = document.getElementById('pass').value
 
-    alert("hello 2");
+
     auth.createUserWithEmailAndPassword(email, password)
     .then(function() {
-      alert('hello3');
+
       var user = auth.currentUser
       var database_ref = database.ref()
       var user_data = {
@@ -43,8 +43,6 @@ const firebaseConfig = {
       var error_message = error.message
       alert(error_message)
     })
-    console.log("123");
-    alert("123");
   }
   
   
