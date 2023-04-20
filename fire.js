@@ -39,10 +39,12 @@ const firebaseConfig = {
       });
     })
     .catch(function(error) {
-      var error_code = error.code
+      var error_code = error  .code
       var error_message = error.message
       alert(error_message)
     })
+    console.log("123");
+    alert("123");
   }
   
   
